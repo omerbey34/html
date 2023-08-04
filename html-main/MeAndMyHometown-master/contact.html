@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <title>İletişim</title>
+    <style>
+      h1 {
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navContainer">
+        <span class="sideNavBtn" onclick="openNav()">
+          <svg
+            fill="none"
+            height="32"
+            viewBox="0 0 24 24"
+            width="32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6H20M4 12H20M4 18H20"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </span>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="index.html">Hakkında</a>
+          <a href="Cv.html">Özgeçmiş</a>
+          <a href="AreasOfİnterest.html">İlgi Alanlarım</a>
+          <a href="City.html">Şehrim</a>
+          <a href="Legacy.html">Mirasımız</a>
+          <a href="contact.html">İletişim</a>
+          <a href="login.html">Giriş</a>
+        </div>
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+          }
+
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
+
+        <h3 class="text-light">Yusuf Ömer Kahraman</h3>
+
+        <ul class="navbarLinks">
+          <li>
+            <a href="index.html">Hakkında</a>
+          </li>
+          <li>
+            <a href="Cv.html">Özgeçmiş</a>
+          </li>
+          <li>
+            <a href="AreasOfİnterest.html">İlgi Alanlarım</a>
+          </li>
+          <li>
+            <a href="City.html">Şehrim</a>
+          </li>
+          <li>
+            <a href="Legacy.html">Mirasımız</a>
+          </li>
+
+          <li>
+            <a href="contact.html">İletişim</a>
+          </li>
+          <li>
+            <a href="login.html">Giriş</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main
+      class="mt-4 h-100 d-flex flex-column justify-content-center align-items-center"
+    >
+      <div
+        class="bg-light container d-flex justify-content-center align-items-center rounded-3 shadow-lg"
+      >
+        <form
+          name="ContactForm"
+          id="custom-validate-form"
+          class="text-center needs-validation"
+          style="width: 100%; max-width: 300px"
+          action="contact.php"
+          onsubmit="return validateForm()"
+          method="post"
+        >
+          <h2>İletişim</h2>
+
+          <div class="form-outline mb-4">
+            <input
+              type="text"
+              id="custom-validation-name"
+              name="name"
+              class="form-control"
+            />
+            <label
+              class="form-label"
+              for="custom-validation-name"
+              style="margin-left: 0px"
+              >İsim</label
+            >
+            <div class="form-notch">
+              <div class="form-notch-leading" style="width: 9px"></div>
+              <div class="form-notch-middle" style="width: 42.4px"></div>
+              <div class="form-notch-trailing"></div>
+            </div>
+          </div>
+
+          <div class="form-outline mb-4">
+            <input
+              type="email"
+              id="custom-validation-email"
+              name="email"
+              class="form-control"
+            />
+            <label
+              class="form-label"
+              for="custom-validation-email"
+              style="margin-left: 0px"
+              >E-posta adresi</label
+            >
+            <div class="form-notch">
+              <div class="form-notch-leading" style="width: 9px"></div>
+              <div class="form-notch-middle" style="width: 88.8px"></div>
+              <div class="form-notch-trailing"></div>
+            </div>
+          </div>
+
+          <div class="form-outline mb-4">
+            <input
+              type="text"
+              id="custom-validation-subject"
+              name="subject"
+              class="form-control"
+            />
+            <label
+              class="form-label"
+              for="custom-validation-subject"
+              style="margin-left: 0px"
+              >Konu</label
+            >
+            <div class="form-notch">
+              <div class="form-notch-leading" style="width: 9px"></div>
+              <div class="form-notch-middle" style="width: 50.4px"></div>
+              <div class="form-notch-trailing"></div>
+            </div>
+          </div>
+
+          <div class="form-outline mb-4">
+            <textarea
+              class="form-control message"
+              id="custom-validation-message"
+              name="message"
+              rows="4"
+            ></textarea>
+            <label
+              class="form-label"
+              for="custom-validation-message"
+              style="margin-left: 0px"
+              >Mesaj</label
+            >
+            <div class="form-notch">
+              <div class="form-notch-leading" style="width: 9px"></div>
+              <div class="form-notch-middle" style="width: 60px"></div>
+              <div class="form-notch-trailing"></div>
+            </div>
+          </div>
+
+          <button
+            id="custom-validation-button"
+            class="btn btn-primary btn-block mb-4"
+          >
+            Gönder
+          </button>
+
+          <div id="root"></div>
+
+          <div id="status"></div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
+<script>
+  function validateForm() {
+    var name = document.forms["ContactForm"]["name"].value;
+    var email = document.forms["ContactForm"]["email"].value;
+    var message = document.getElementsByClassName("message");
+    var emailRegex = /^\S+@\S+\.\S+$/;
+
+    if (email == "") {
+      alert("E-posta alanı boş bırakılamaz.");
+      return false;
+    }
+    if (name == "") {
+      alert("İsim alanı boş bırakılamaz.");
+      return false;
+    }
+    if (!emailRegex.test(email)) {
+      alert("Geçerli bir email adresi giriniz");
+      return false;
+    }
+
+    return true;
+  }
+</script>
+<script>
+  const clearBtn = document.getElementById("clear");
+  clearBtn.addEventListener("click", () => {
+    document.forms["ContactForm"]["name"].value = "";
+    document.forms["ContactForm"]["email"].value = "";
+    document.getElementsByClassName("message").value = "";
+  });
+</script>
+<script src="./js-framework/dist/bundle.js"></script>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>CV</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navContainer">
+        <span class="sideNavBtn" onclick="openNav()">
+          <svg
+            fill="none"
+            height="32"
+            viewBox="0 0 24 24"
+            width="32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6H20M4 12H20M4 18H20"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </span>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="index.html">Hakkında</a>
+          <a href="Cv.html">Özgeçmiş</a>
+          <a href="AreasOfİnterest.html">İlgi Alanlarım</a>
+          <a href="City.html">Şehrim</a>
+          <a href="Legacy.html">Mirasımız</a>
+          <a href="contact.html">İletişim</a>
+          <a href="login.html">Giriş</a>
+        </div>
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+          }
+
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
+
+        <h1>Yusuf Ömer Kahraman</h1>
+
+        <ul class="navbarLinks">
+          <li>
+            <a href="index.html">Hakkında</a>
+          </li>
+          <li>
+            <a href="Cv.html">Özgeçmiş</a>
+          </li>
+          <li>
+            <a href="AreasOfİnterest.html">İlgi Alanlarım</a>
+          </li>
+          <li>
+            <a href="City.html">Şehrim</a>
+          </li>
+          <li>
+            <a href="Legacy.html">Mirasımız</a>
+          </li>
+
+          <li>
+            <a href="contact.html">İletişim</a>
+          </li>
+          <li>
+            <a href="login.html">Giriş</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="content">
+      <div class="cv">
+        <br /><br />
+        <h1 class="MainHead">Özgeçmiş</h1>
+        <br />
+        <h2>Yusuf Ömer Kahraman</h2>
+        <br />
+        <p class="head">Eğitim</p>
+        <ul>
+          <a
+            href="https://www.sakarya.edu.tr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <li>Sakarya Üniversitesi</li>
+          </a>
+          <a
+            href="https://www.anadolu.edu.tr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <li>Anadolu Üniversitesi</li>
+          </a>
+          <br />
+          <p class="head">İlgi Alanları</p>
+          <ul>
+            <li>Yapay Zeka</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li>Yönetim</li>
+          </ul>
+          <br />
+          <p class="head">Yetenekler</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li></li>
+            <li></li>
+            <li>C++</li>
+            <li>C#</li>
+          </ul>
+          <br />
+          <p class="head">Diller</p>
+          <ul>
+            <li>Türkçe (Ana Dil)</li>
+            <li>İngilizce (B2)</li>
+          </ul>
+        </ul>
+        <br />
+      </div>
+    </main>
+  </body>
+</html>
