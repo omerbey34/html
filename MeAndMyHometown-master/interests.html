@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şiirlerim</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-color: #e9ecef;
+        }
+
+        .poem-card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<nav class="navbar">
+    <div class="navContainer">
+      <span class="sideNavBtn" onclick="openNav()">
+        <svg
+          fill="none"
+          height="32"
+          viewBox="0 0 24 24"
+          width="32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 6H20M4 12H20M4 18H20"
+            stroke="#fff"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </span>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="index.html">Hakkında</a>
+        <a href="Cv.html">Özgeçmiş</a>
+        <a href="City.html">Şehrim</a>
+        <a href="interests.html">İlgi Alanlarım</a>
+        <a href="contact.html">İletişim</a>
+        <a href="login.html">Giriş</a>
+      </div>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+
+      <h1>Yusuf Ömer Kahraman</h1>
+
+      <ul class="navbarLinks">
+        <li>
+          <a href="index.html">Hakkında</a>
+        </li>
+        <li>
+          <a href="Cv.html">Özgeçmiş</a>
+        </li>
+        <li>
+          <a href="City.html">Şehrim</a>
+        </li> 
+        <li>
+          <a href="interests.html">İlgi Alanlarım</a>
+        </li> 
+        <li>
+          <a href="contact.html">İletişim</a>
+        </li>
+        <li>
+            <a href="login.html">Giriş</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">Merhaba!</h1>
+            <p class="lead">Ben Şiir Sever, şiir yazmaya ilgi duyan biriyim. Özellikle Japon şiirine olan ilgim beni
+                derinden etkiliyor. Japon şiir geleneği, minimalizm ve doğaya olan bağlılık gibi özellikleriyle beni
+                büyülüyor. Burada sizinle paylaşmak istediğim iki Japon şiirini görebilirsiniz.</p>
+        </div>
+
+        <h2 class="mb-4">Şiirlerim</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card poem-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sakura Rüzgarı</h5>
+                        <p class="card-text">Kır sakuraları,<br>
+                            Rüzgarla dans ederken,<br>
+                            Bahar an gelir.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card poem-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Bambu Ormanı</h5>
+                        <p class="card-text">Bambu yaprakları,<br>
+                            Hafifçe eğilerek,<br>
+                            Huzur saçarlar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Günün Sözü</h5>
+                <p class="card-text" id="quoteContent"></p>
+                <p class="card-text" id="quoteAuthor"></p>
+                <p class="card-text" id="quoteTags"></p>
+            </div>
+        </div>
+    </div><br>
+    <footer>
+        <br>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="api.js"></script>
+</body>
+
+</html>
